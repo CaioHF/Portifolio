@@ -80,14 +80,13 @@ section#ficha {
 section#ficha img.foto {
   width: 200px;
   aspect-ratio: 1/1;
-  object-fit: cover;
+  object-fit: fill;
   overflow: hidden;
   border-radius: 50%;
   border: 5px solid var(--fundo-card);
   outline: 5px solid var(--destaque);
   display: block;
   margin: auto;
-  margin-bottom: 15px;
 }
 
 section#ficha h1 {
