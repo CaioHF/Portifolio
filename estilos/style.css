@@ -238,6 +238,10 @@ article h2 {
   cursor: pointer;
 }
 
+#projeto-conteiner summary {
+  font-weight: bold;
+}
+
 #projeto-conteiner .foto {
   width: 100%;
   aspect-ratio: 16/9;
