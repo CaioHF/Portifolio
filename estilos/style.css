@@ -216,29 +216,6 @@ article h2 {
   font-size: 1.1em;
 } 
 
-#certificado-conteiner {
-  display: flex;
-  flex-direction:column-reverse;
-  gap: 20px;
-}
-
-#certificado-conteiner .certificado {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  background-color: var(--fundo-principal);
-  padding: 10px;
-  border-radius: 8px;
-  border-left: 5px solid var(--destaque-inverso);
-  transition: border-color 0.5s, border-width 0.5s;
-}
-
-#certificado-conteiner .certificado:hover {
-  border-color: var(--destaque);
-  border-left-width: 15px;
-  cursor: pointer;
-}
-
 #projeto-conteiner {
   display: flex;
   flex-direction:column-reverse;
@@ -265,6 +242,7 @@ article h2 {
 #projeto-conteiner summary {
   font-weight: bold;
 }
+
 
 #projeto-conteiner .foto {
   width: 100%;
