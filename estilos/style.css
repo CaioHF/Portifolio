@@ -137,6 +137,7 @@ article h2 {
   width:100%;
   margin: auto;
   aspect-ratio: 16/9;
+  height: 400px;
 }
 
 .video-container iframe {
@@ -153,6 +154,34 @@ article h2 {
   grid-template-columns: 1fr;
   gap:30px;
 
+}
+
+.Div-SoftSkills {
+  margin-bottom: -25px;
+  grid-column: 1 / -1;
+}
+
+.soft-skills-container {
+  display: flex;
+  grid-column: 1 / -1;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag-skill {
+  background-color: var(--fundo-principal);
+  border: 1px solid var(--destaque);
+  color: var(--destaque);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  &:hover {
+    background-color: var(--destaque-inverso);
+    color: var(--texto-inverso);
+  }
 }
 
 .info {
@@ -217,43 +246,84 @@ article h2 {
 
 #projeto-conteiner {
   display: flex;
-  flex-direction:column-reverse;
-  gap: 20px;
-}
-
-#projeto-conteiner .projeto {
-  display: flex;
   flex-direction: column;
-  gap: 15px;
-  background-color: var(--fundo-principal);
-  padding: 10px;
+  gap: 25px;
+}
+
+.projeto {
+  border: 1px solid rgba(0, 0, 0, 0.200);
   border-radius: 8px;
-  border-left: 5px solid var(--destaque-inverso);
-  transition: border-color 0.5s, border-width 0.5s;
-}
-
-#projeto-conteiner .projeto:hover {
-  border-color: var(--destaque);
-  border-left-width: 15px;
-  cursor: pointer;
-}
-
-#projeto-conteiner summary {
-  font-weight: bold;
-}
-
-
-#projeto-conteiner .foto {
-  width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
   overflow: hidden;
-  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-#projeto-conteiner a{
+.foto-projeto {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.projeto-info {
+  padding: 15px;
+}
+
+.projeto-info h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.techs-usadas {
+  margin: 10px 0;
+  display: flex;
+  gap: 5px;
+}
+
+.techs-usadas small {
+  background: #eee;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.botoes-projeto {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-demo, .btn-code {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
   text-decoration: none;
-  color: var(--texto);
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.btn-demo {
+  background-color: var(--destaque);
+  color: white;
+
+  &:hover{
+    background-color: var(--destaque-hover); 
+  }
+}
+
+.btn-code {
+    background-color: transparent;
+    border: 1px solid var(--destaque);
+    color: var(--destaque);
+
+  &:hover {
+    background-color: var(--destaque);
+    color: white; 
+  }
 }
 
 footer {
