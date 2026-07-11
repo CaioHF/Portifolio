@@ -161,26 +161,11 @@ article h2 {
 }
 
 .soft-skills-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   grid-column: 1 / -1;
   width: 100%;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.tag-skill {
-  background-color: var(--fundo-principal);
-  border: 1px solid var(--destaque);
-  color: var(--destaque);
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 600;
-
-  &:hover {
-    background-color: var(--destaque-inverso);
-    color: var(--texto-inverso);
-  }
+  gap: 15px;
 }
 
 .nome {
@@ -332,6 +317,10 @@ footer {
   }
 
   #skill-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .soft-skills-container {
     grid-template-columns: 1fr 1fr;
   }
 
