@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Caio Ferencine</title>
     <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="estilos/style.css">
     <script src="https://kit.fontawesome.com/a13ae5a66e.js" crossorigin="anonymous"></script>
 </head>
@@ -12,7 +13,7 @@
     <header>
         <nav id="menu">
             <ul>
-                <li><a href="#video" class="link"><abbr title="Início"><i class="fa-solid fa-house"></i></abbr></a></li>
+                <li><a href="#ficha" class="link"><abbr title="Início"><i class="fa-solid fa-house"></i></abbr></a></li>
 
                 <li><a href="#skills" class="link"><abbr title="Habilidades"><i class="fa-solid fa-brain"></i></abbr></a></li>
 
@@ -20,7 +21,7 @@
 
                 <li><a href="#projetos" class="link"><abbr title="Projetos"><i class="fa-solid fa-trowel-bricks"></i></abbr></a></li>
 
-                <li><a href="#" class="link" id="botao-tema"><i class="fa-solid fa-moon"></i></a></li>
+                <li><a href="#" id="botao-tema"><i class="fa-solid fa-moon"></i></a></li>
 
             </ul>
         </nav>
@@ -68,96 +69,43 @@
         </section>
 
         <section id="detalhes">
-            <article id="video">
-                <h2> <i class="fa-regular fa-handshake"></i>Deixe-me apresentar</h2>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/57Tl2bjfT6c?si=1D4ta_CHycH2m48G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-
-            </article>  <!--Fim-->
-
             <article id="skills">
                 <h2><i class="fa-solid fa-brain"></i> Hard Skills</h2>
 
                 <div id="skill-container">
                     <div class="item">
-
-                        <div class="info">
-
-                            <span class="nome">
-
-                                <i class="fa-solid fa-code"></i>
-                                    HTML5
-                            </span>
-
-                            <span class="porcent">
-                                Avançado
-                            </span>
-                        </div>
-
-                        <div class="barra">
-                            <div class="progresso" style="width: 90%;"></div>
-                        </div>
+                        <span class="nome">
+                            <i class="devicon-html5-plain colored"></i>
+                            HTML5
+                        </span>
                     </div>
 
                     <div class="item">
-
-                        <div class="info">
-
-                            <span class="nome">
-                                
-                                <i class="fa-solid fa-code"></i>
-                                    CSS3
-                            </span>
-
-                            <span class="porcent">
-                                Avançado
-                            </span>
-                        </div>
-
-                        <div class="barra">
-                            <div class="progresso" style="width: 80%;"></div>
-                        </div>
+                        <span class="nome">
+                            <i class="devicon-css3-plain colored"></i>
+                            CSS3
+                        </span>
                     </div>
 
                     <div class="item">
-
-                        <div class="info">
-
-                            <span class="nome">
-                                
-                                <i class="fa-solid fa-code"></i>
-                                    JavaScript
-                            </span>
-
-                            <span class="porcent">
-                                Intermediário
-                            </span>
-                        </div>
-
-                        <div class="barra">
-                            <div class="progresso" style="width: 75%;"></div>
-                        </div>
+                        <span class="nome">
+                            <i class="devicon-javascript-plain colored"></i>
+                            JavaScript
+                        </span>
                     </div>
 
                     <div class="item">
+                        <span class="nome">
+                            <i class="devicon-java-plain colored"></i>
+                            Java
+                        </span>
+                    </div>
 
-                        <div class="info">
-
-                            <span class="nome">
-                                
-                                <i class="fa-solid fa-code"></i>
-                                    Java
-                            </span>
-
-                            <span class="porcent">
-                                Básico
-                            </span>
-                        </div>
-
-                        <div class="barra">
-                            <div class="progresso" style="width: 50%;"></div>
-                        </div>
+                    <div class="item">
+                        <span class="nome">
+                            <i class="devicon-postgresql-plain colored"></i>
+                            PostgreSQL
+                        </span>
                     </div>
 
                     <div class="Div-SoftSkills">
@@ -240,47 +188,6 @@
                         </div>
                     </div>
 
-                    <div class="projeto">
-                        <img src="imagens/Projeto Lista de Tarefas.png" alt="Preview do projeto" class="foto-projeto">
-                        <div class="projeto-info">
-                            <h3 class="titulo">Lista de Tarefas (To-Do List)</h3>
-                            <p class="desc-curta">Aplicação web interativa para gerenciamento de tarefas diárias com persistência de dados local.</p>
-                            
-                            <div class="techs-usadas">
-                                <small>HTML</small> <small>CSS</small> <small>JavaScript</small>
-                            </div>
-
-                            <div class="botoes-projeto">
-                                <a href="https://caiohf.github.io/Extensao2/" target="_blank" class="btn-demo">
-                                    <i class="fa-solid fa-eye"></i> Ver Projeto
-                                </a>
-                                <a href="https://github.com/CaioHF/Extensao2" target="_blank" class="btn-code">
-                                    <i class="fa-brands fa-github"></i> Ver Código
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="projeto">
-                        <img src="imagens/Projeto Metodologias Ageis.png" alt="Preview do projeto" class="foto-projeto">
-                        <div class="projeto-info">
-                            <h3 class="titulo">Landing Page Metodologias Ágeis</h3>
-                            <p class="desc-curta">Página informativa e responsiva explicando conceitos de Scrum, Kanban e XP.</p>
-                            
-                            <div class="techs-usadas">
-                                <small>HTML5</small> <small>CSS3</small>
-                            </div>
-
-                            <div class="botoes-projeto">
-                                <a href="https://caiohf.github.io/Metodologias-Ageis/" target="_blank" class="btn-demo">
-                                    <i class="fa-solid fa-eye"></i> Ver Projeto
-                                </a>
-                                <a href="https://github.com/CaioHF/Metodologias-Ageis" target="_blank" class="btn-code">
-                                    <i class="fa-brands fa-github"></i> Ver Código
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </article>
 
